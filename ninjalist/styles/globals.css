@@ -40,3 +40,12 @@ footer {
   color: #777;
   border-top: 1px solid #eaeaea;
 }
+
+.notFound {
+  text-align: center;
+}
+
+.notFound a {
+  text-decoration: underline;
+  color: #4979ff;
+}

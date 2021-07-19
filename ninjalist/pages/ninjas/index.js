@@ -17,13 +17,11 @@ const Ninjas = ({ninjas}) => {
     return (
         <div>
             {ninjas.map(item =>(
-                <div key={item.id}>
-                    <Link href='/'>
-                        <a className={styles.single}>
-                            <h3>{item.name}</h3>
-                        </a>
-                    </Link>
-                </div>
+                <Link href={`/ninjas/${item.id}`} key={item.id}>
+                    <a className={styles.single}>
+                        <h3>{item.name}</h3>
+                    </a>
+                </Link>
             ))}
         </div>
     )

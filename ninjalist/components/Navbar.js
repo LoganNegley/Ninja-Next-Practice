@@ -1,5 +1,6 @@
 import Link from 'next/Link';
-import Image from 'next/image'
+import Image from 'next/image';
+import logo from '../public/images/logo.png';
 
 const Navbar = () => {
     return (
@@ -8,7 +9,9 @@ const Navbar = () => {
                 <div className='logo'>
                 {/* traditional image placement */}
                     {/* <img src="/images/logo.png" alt="ninja logo" /> */}
-                    <Image src="/images/logo.png" width={128} height={77} />
+                    {/* <Image src="/images/logo.png" width={128} height={77} /> */}
+                    <Image src={logo} width={128} height={77} />
+
 
                 </div>
                 <Link href='/'>
